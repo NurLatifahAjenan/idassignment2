@@ -1,5 +1,7 @@
 # ID_Assignment2_S10204552_NurLatifah
 
+github link: https://nurlatifahajenan.github.io/idassignment2/
+
 This website is built to help Singaporeans plan their trip and find the best routes to their desired destinations. The intended audience is Singaporeans who are not familiar with directions in Singapore. The APIs used is the mapbox api to access the singapore map.
 
 
@@ -41,4 +43,5 @@ Acknowledgements
     - https://www.w3schools.com/
 - The API used for this project is mapbox api
     - https://docs.mapbox.com/mapbox-gl-js/example/mapbox-gl-directions/
+
 
