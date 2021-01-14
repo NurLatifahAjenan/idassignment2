@@ -1,0 +1,203 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Arial", serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  
+  header {
+    position: fixed;
+  }
+  
+  .nav-bar {
+    overflow: hidden;
+    background-color: royalblue;
+    height: 60px;
+  }
+
+  .navbar-links ul {
+    float: left;
+    display: flex;
+  }
+
+  .navbar-links li {
+    list-style: none;
+  }
+
+  .navbar-links li a{
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .nav-bar a:hover {
+    color: black;
+    background-color: rgba(255, 255, 255, 0.856);
+  }
+
+  .nav-bar a.active {
+    background: rgb(78, 190, 255);
+    color: black;
+  }
+
+  .nav-bar a.burger {
+    color: white;
+    display: none;
+    position: absolute;
+    font-size: 40px;
+    margin: 0;
+    padding: 10px 20px;
+  }
+
+  .nav-bar a.burger:hover {
+    color: black;
+  }
+
+  .title-text h1{
+    position: relative;
+    margin: 0;
+    padding: 80px 0 0 0;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: black;
+    white-space: nowrap;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+
+  .main {
+    position: relative;
+    text-align: center;
+    color: black;
+  }
+
+  .main h1 {
+    font-size: 40px;
+    position: relative;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    white-space: nowrap;
+
+  }
+
+
+  .form-box {
+    width: 400px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background:gainsboro;
+    padding: 5px;
+  }
+
+  .login-text {
+    position: relative;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    top: 100px;
+  }
+
+  .h4 {
+    padding: 10px 50px;
+    position: relative;
+    color: black;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .input-group {
+    top: 150px;
+    left: 70px;
+    position: absolute;
+    width: 250px;
+  }
+
+  .input-field {
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    outline: none;
+  }
+
+  .submit-button {
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    outline: none;
+  }
+
+  .check-box {
+    margin: 20px 10px 20px 0;
+  }
+
+  span {
+    color: #777;
+    font-size: 12px;
+    bottom: 58px;
+    position: absolute;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+    .nav-bar a.burger {
+      display: block;
+    }
+
+    .navbar-links li {
+      /*display: none;*/
+    }
+
+    .nav-bar {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .nav-bar a {
+      flex-direction: column;
+    }
+
+    .navbar-links ul {
+      margin-top: 65px;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .navbar-links.active {
+      display: flex;
+    }
+
+    .nav-bar input[type=text] {
+      float: none;
+      display: flex;
+      width: 100%;
+      margin: 0;
+    }
+  }

@@ -1,4 +1,68 @@
 <!DOCTYPE html>
 <html>
-    
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <link href= "style.css" rel="stylesheet" type="text/css">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+        
+      <title>Navigation</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+      <script src="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.js"></script>
+      <link href="https://api.mapbox.com/mapbox-gl-js/v2.0.1/mapbox-gl.css" rel="stylesheet" />
+      <style>
+	      body { margin: 0; padding: 0; }
+	      #map { position: absolute; top: 200px; bottom: 0; left: 10%; width: 80%; height: auto; margin-bottom: 20px; }
+      </style>
+    </head>
+
+    <body>
+        <nav class="nav-bar">
+          <div class = "navbar-links">
+            <ul>
+              <li><a class="active" href="index.html">Home</a></li>
+              <li><a href="account.html">Account</a></li>
+            </ul>
+          <a href="#" class="burger">
+            <i class="fa fa-bars"></i>
+          </a>
+          </form>
+          </div>
+        </nav>
+
+
+        <div class="main">
+          <h1 style="font-size: 3vw;">
+            Plan Your Trip.
+          </h1>
+        </div>
+      
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+        <link
+          rel="stylesheet"
+          href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css"
+          type="text/css"
+        />
+        <div id="map"></div>
+         
+        <script>
+          mapboxgl.accessToken = 'pk.eyJ1IjoibnVybGF0aWZhaDEwMjA0NTUyIiwiYSI6ImNranc1eDFvZTBhbWUyc3IxbXd0NjE0YzEifQ.AHG0Kq4FftPpLqmT65IZaQ';
+            var map = new mapboxgl.Map({
+              container: 'map',
+              style: 'mapbox://styles/mapbox/streets-v11',
+              center: [103.8, 1.3],
+              zoom: 10
+            });
+         
+            map.addControl(
+              new MapboxDirections({
+                accessToken: mapboxgl.accessToken
+              }),
+              'top-left'
+            );
+        </script>
+    </body>
 </html>
